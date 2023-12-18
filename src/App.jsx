@@ -22,6 +22,7 @@ export default function App() {
         <Route index element={<Home/>} />
         <Route path="recipes/:id" element = {<RecipeDetail/>} />
       </Routes>
+      {/* <Navbar/> */}
     </div>
   )
 }

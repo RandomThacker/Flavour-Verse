@@ -1,10 +1,12 @@
 import React from 'react'
 import { Banner1, Banner2, Banner3, Banner4, Banner5} from "../images"
+import Navbar from './Navbar'
 
 const Header = ({title,image, type})=> {
     const images = [Banner1, Banner2, Banner3, Banner4, Banner5]
   return (
     <div className='w-full h-[100vh]'>
+        <Navbar/>
       <div className='w-full h-full relative '>
         <img src={image ?? images[Math.floor(Math.random()*images.length)]} className='w-full h-full object-cover'/>
       </div>
