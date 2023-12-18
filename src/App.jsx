@@ -1,7 +1,13 @@
+import Header from "./Components/Header";
+import Home from "./pages/Home";
+import RecipeDetail from "./pages/RecipeDetail";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Header/>
+      <Home/>
+      <RecipeDetail/>
+    </div>
   )
 }
