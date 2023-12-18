@@ -4,10 +4,8 @@ import RecipeDetail from "./pages/RecipeDetail";
 
 export default function App() {
   return (
-    <div>
-      <Header/>
+    <div className="bg-black">
       <Home/>
-      <RecipeDetail/>
     </div>
   )
 }
