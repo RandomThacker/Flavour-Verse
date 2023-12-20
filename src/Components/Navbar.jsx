@@ -30,11 +30,17 @@ function Navbar() {
         </ul>
         <Button title="Sign in" containerStyle="hidden md:block bg-transparent border border-white text-white hover:bg-white hover:text-slate-700 rounded-full min-w-[130px]"/>
 
-        <button className="block md:hidden text-white text-xl">
+        <button className="block md:hidden text-white text-xl"
+        onClick={() => setOpen(prev=>!prev)}>
             {open ? <AiOutlineClose/> : <HiMenuAlt3/>}
         </button>
-
       </nav>
+      <div className={`${open ? "flex" : "hidden"} bg-black flex-col w-full px-4 py-4 pt-16 pb-10 text-white gap-y text-[14px]`}>
+        <a href="/">Home</a>
+        <a href="/#recipes">Recipes</a>
+        <a href="/">Favourites</a>
+
+      </div>
     </header>
   );
 }
