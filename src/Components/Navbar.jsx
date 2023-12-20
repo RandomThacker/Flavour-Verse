@@ -13,7 +13,7 @@ function Navbar() {
           href="/"
           className="flex items-center justify-center text-white text-large cursor-pointer"
         >
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" className="md:block w-8 h-8 lg:w-14 lg:h-14" />
           Flavour<span>Verse</span>
         </a>
 
