@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 const RecipeCard = ({recipe}) => {
   const{image, label, cuisineType, dietLabel, mealType, uri} = recipe?.recipe
 
-  console.log(cuisineType)
+  // console.log(cuisineType)
   const id = uri?.split("#")[1]
   return (
-    <Link to={`/recipes/${id}`} className='w-full'>
-    <div className='bg-gradient shadow w-full md:w-[220px] rounded-lg '>
+    <Link to={`/recipes/${id}`} className='w-full md:w-[220px]'>
+    <div className='bg-gradient shadow w-full rounded-lg '>
       <img src={image} alt={label} className='rounded-lg h-[200px] md:h-[150px] w-full'/>
 
       <div className='p-3'>
