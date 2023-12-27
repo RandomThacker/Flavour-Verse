@@ -13,7 +13,8 @@ function Recipes() {
   const [loading, setLoading] = useState(false);
 
   const showMore = ()=>{
-    setLimit((prev)=>prev+10)
+    setLoading(true)
+    setLimit((prev)=>prev+12)
     getRecipes()
   }
 
